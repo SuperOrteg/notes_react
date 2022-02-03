@@ -14,8 +14,8 @@ const App = () => {
 	const onAddNote = () => {
 		const newNote = {
 			id: uuidv4(),
-			title: "Untitled Note",
-			content: "Content",
+			title: "Note sans titre",
+			content: "Contenu de la note",
 		};
 
 		setNotes([newNote, ...notes]);

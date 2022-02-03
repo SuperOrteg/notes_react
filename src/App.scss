@@ -3,6 +3,7 @@
 $btn: #D20A32;
 $bg: #191919;
 $form: #828282;
+$active: #5e5e5e;
 
 body {
 	color: white;
@@ -51,9 +52,11 @@ main {
 	justify-content: center;
 }
 
-.navbarNotes {
-	margin-left: 10%;
-	margin-right: 10%;
+.note-card {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 12px;
+	padding-top: 12px;
 }
 
 .navTitle{
@@ -114,4 +117,8 @@ textarea {
 	outline: none;
 	border: none;
 	color: white;
+}
+
+.active {
+	background-color: $active;
 }
