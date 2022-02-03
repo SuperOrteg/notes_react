@@ -1,0 +1,117 @@
+@import "~bootstrap/scss/bootstrap";
+
+$btn: #D20A32;
+$bg: #191919;
+$form: #828282;
+
+body {
+	color: white;
+}
+
+.navbarSide {
+	top: 0;
+	width: 295px;
+	height: 100vh;
+	border-right: 1.5px solid white;
+	background-color: $bg;
+	position: fixed;
+	box-sizing: border-box;
+	overflow: scroll;
+};
+
+main {
+	border-left: 1.5px solid white;
+	top: 0;
+	height: 100vh;
+    margin-left: 295px;
+    max-width: 100vw;
+    background-color: $bg;
+    overflow: hidden;
+    padding: 1%;
+}
+
+.addBtn {
+  text-decoration: none;
+  background-color: $btn;
+  color: white;
+  padding: 10px 10px 10px 20px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border: none;
+  width: 80%;
+  font-size: 16px;
+  font-weight: light;
+};
+
+.navbarTop {
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.navbarNotes {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.navTitle{
+	font-weight: bold;
+	color: $btn;
+	font-size: 22px;
+}
+
+.noNote {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.displayTop {
+	height: 50%;
+	width: 100%;
+	margin-left: 2%;
+	margin-right: 2%;
+	overflow: scroll;
+}
+
+.displayBottom {
+	height: 50%;
+	width: 100%;
+}
+
+.dangerous h1, h2, h3, h4 {
+	font-size: 18px;
+	margin-bottom: 22px;
+}
+
+.dangerous p {
+	margin-bottom: 22px;
+}
+
+input {
+	width: 100%;
+	margin-bottom: 1%;
+	padding: 20px;
+	background-color: $form;
+	outline: none;
+	border: none;
+	color: white;
+}
+
+textarea {
+	width: 100%;
+	height: 80%;
+	padding: 20px;
+	overflow: scroll;
+	resize: none;
+	background-color: $form;
+	outline: none;
+	border: none;
+	color: white;
+}
