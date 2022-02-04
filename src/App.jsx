@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import { v4 as uuidv4 } from "uuid";
 
 const App = () => {
-	const [notes, setNotes] = useState(JSON.parse(localStorage.blocNotes) || []);
+	const [notes, setNotes] = useState(localStorage.blocNotes ? JSON.parse(localStorage.blocNotes) : []);
 	const [activeNote, setActiveNote] = useState(false);
 
 	useEffect(() => {
