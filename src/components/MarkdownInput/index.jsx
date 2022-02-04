@@ -3,11 +3,8 @@ import Showdown from 'showdown';
 const converter = new Showdown.Converter();
 
 const MarkdownInput = ({ activeNote, onUpdateNote }) => {
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
 
   const onChange = (key, value) => {
-    key === 'title' ? setTitle(value): setContent(value);
     onUpdateNote({
       ...activeNote,
       [key]: value,
